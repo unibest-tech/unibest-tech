@@ -43,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: pnpm i
       - name: Build with VitePress
-        run: pnpm run docs:build
+        run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
