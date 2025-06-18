@@ -20,21 +20,6 @@
     <a href="https://gitcode.com/feige996/unibest/stargazers">
       <img src="https://gitcode.com/feige996/unibest/star/badge.svg?theme=gray" alt="star" />
     </a>
-
-    <!-- <a href="https://github.com/feige996/unibest">
-      <img alt="GitHub" src="https://img.shields.io/github/license/feige996/unibest?logo=github" />
-    </a> -->
-
-    <a href="https://www.npmjs.com/package/create-unibest">
-      <img
-        alt="npm"
-        src="https://img.shields.io/npm/dw/create-unibest?logo=npm&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fcreate-unibest"
-      />
-    </a>
-
-    <!-- <a href="https://www.npmjs.com/package/create-unibest">
-      <img src="https://img.shields.io/npm/dt/create-unibest?style=flat-square" />
-    </a> -->
   </p>
 </template>
 
