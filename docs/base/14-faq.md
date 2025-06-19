@@ -119,10 +119,21 @@ git commit -m "feat: xxx" --no-verify
 
 ## 13. `base` 模板如何接 `uniCloud` ?
 
-- 1. 操作方案：直接在原始项目目录上右键，重新识别项目类型，就可以关联 `uniCloud` 了，然后用原始项目直接运行就可以了，不需要再 `pnpm dev:app` 后导入 `dist/dev/app` 再运行了。
+- 1. 操作方案：直接在原始项目目录上右键（就是导入 unibest 项目的 src 文件夹），重新识别项目类型，就可以关联 `uniCloud` 了，然后用原始项目直接运行就可以了，不需要再 `pnpm dev:app` 后导入 `dist/dev/app` 再运行了。
 
 - 2. 问：其他模板可以吗？答：其他模板也可以，操作同上。
 
 - 3. 我写的文章链接：[【unibest】可以去掉 hbx 模版了，base 模板一统天下](https://mp.weixin.qq.com/s?__biz=MzUxMzAwNzMwNw==&mid=2247484792&idx=1&sn=b6116198f265384e5a51bd2bd95bea90&chksm=f95a8edcce2d07caba60782e17e48d766612c0ad85c019379fd5ac37890e31b6ca7049e670f7&scene=178&cur_album_id=3438500614009782275#rd)
+
+## 14. 微信小程序编译报错
+
+```text
+[ WXSS 文件编译错误]
+./app.wxss(61:2204): unexpected `\` at pos 5292(env: macOS,mp,1.06.2412040; lib: 3.7.12)
+```
+
+![alt text](14-2.png)
+![alt text](14-1.png)
+大概率是因为 `node` 版本比较低(比如 `v18`), 只需要把 `node`版本升级到 `v22+` 就行。(已经有多为同学遇到，可能是因为微信开发者工具升级导致的，升级后就可以了。)
 
 全文完~
