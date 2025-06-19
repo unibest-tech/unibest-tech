@@ -11,6 +11,9 @@
 普通请求分 2 种处理，一种是只在页面请求一次的一次性请求，这种请求占大多数；一种是项目多处用到的请求，这种请求占小部分，需要单独编写一个请求函数放到 `api文件夹` or `service文件夹`。
 
 > `unibest` 里面是使用 `service文件夹` 后面不再说明。
+>
+> 问：`utils` 目录下面 `http.ts` 和 `request.ts` 有什么区别？
+> 答：`http.ts` 是配合 `useRequest` 函数使用的，`request.ts` 是配合 `vue-query` 自动生成请求接口用的。[详情见](./17-generate#生成-uni-request-代码)
 
 下面来分别演示：
 
@@ -52,10 +55,10 @@ const { loading, error, data, run } = useRequest<IFooItem>(() => getFooAPI('菲�
 对应的 `src/service/index/foo.ts` 文件如下：
 
 ```ts
-import { http, httpGet } from '@/utils/http'
+import { http, httpGet } from '@/utils/http';
 export interface IFooItem {
-  id: string
-  name: string
+  id: string;
+  name: string;
 }
 
 /** GET 请求 */
@@ -64,13 +67,13 @@ export const getFooAPI = (name: string) => {
     url: `/foo`,
     method: 'GET',
     query: { name },
-  })
-}
+  });
+};
 
 /** GET 请求 - 再次简化，看大家是否喜欢这种简化 */
 export const getFooAPI2 = (name: string) => {
-  return httpGet<IFooItem>('/foo', { name })
-}
+  return httpGet<IFooItem>('/foo', { name });
+};
 ```
 
 依然非常简洁，深受妹子喜爱。
@@ -80,25 +83,25 @@ export const getFooAPI2 = (name: string) => {
 ```ts
 /** GET 请求 */
 export const getFooAPI = (name: string) => {
-  return http.get<IFooItem>('/foo', { name })
-}
+  return http.get<IFooItem>('/foo', { name });
+};
 /** GET 请求；支持 传递 header 的范例 */
 export const getFooAPI2 = (name: string) => {
-  return http.get<IFooItem>('/foo', { name }, { 'Content-Type-100': '100' })
-}
+  return http.get<IFooItem>('/foo', { name }, { 'Content-Type-100': '100' });
+};
 
 /** POST 请求 */
 export const postFooAPI = (name: string) => {
-  return http.post<IFooItem>('/foo', { name })
-}
+  return http.post<IFooItem>('/foo', { name });
+};
 /** POST 请求；需要传递 query 参数的范例；微信小程序经常有同时需要query参数和body参数的场景 */
 export const postFooAPI2 = (name: string) => {
-  return http.post<IFooItem>('/foo', { name })
-}
+  return http.post<IFooItem>('/foo', { name });
+};
 /** POST 请求；支持 传递 header 的范例 */
 export const postFooAPI3 = (name: string) => {
-  return http.post<IFooItem>('/foo', { name }, { name }, { 'Content-Type-100': '100' })
-}
+  return http.post<IFooItem>('/foo', { name }, { name }, { 'Content-Type-100': '100' });
+};
 ```
 
 ## 图片上传
@@ -172,23 +175,23 @@ export const getFooAPI = (name: string) => {
 }
 ```
 
-## 支持header传递
+## 支持 header 传递
 
 目前（v2.6.2）已经支持 `header` 了，具体使用方法如下：(最后一个参数就是 `header`，不需要不用传，需要才传。)
 
 ```ts
 /** GET 请求 */
 export const getFooAPI = (name: string) => {
-  return http.get<IFooItem>('/foo', { name }, { 'Content-Type': 'multipart/form-data' })
-}
+  return http.get<IFooItem>('/foo', { name }, { 'Content-Type': 'multipart/form-data' });
+};
 
 /** POST 请求 */
 export const postFooAPI = (name: string) => {
-  return http.post<IFooItem>('/foo', { name }, { name }, { 'Content-Type': 'multipart/form-data' })
-}
+  return http.post<IFooItem>('/foo', { name }, { name }, { 'Content-Type': 'multipart/form-data' });
+};
 ```
 
-低于v2.6.2版本，需要手动设置header，具体使用方法如下：(`utils/http.ts`)
+低于 v2.6.2 版本，需要手动设置 header，具体使用方法如下：(`utils/http.ts`)
 
 ```diff
 /**
