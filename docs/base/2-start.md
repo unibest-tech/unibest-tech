@@ -2,8 +2,8 @@
 
 - 前置依赖
 
-  - **Node.js** - `>=v18`
-  - **pnpm** - `>=7.30`（推荐使用 `8.12+`）
+  - **Node.js** - `>=v20`
+  - **pnpm** - `>=8+` (我的是 10.11.0)
   - **`VSCode`** - 可选 `WebStrom`
   - **`HBuilderX`** - `APP` 的运行和发布还是离不开它
 
@@ -52,7 +52,7 @@ npm create unibest@latest my-project
 
 ::: details `tabbar 模板` 和 `spa 模板` 的区别
 
-- `tabbar` 模板里面的tabbar 路由是属于 `tabbar` 级别的，需要使用 `switchTabbar` 切换，`tabbar` 页面会有缓存，渲染性能较好。
+- `tabbar` 模板里面的 tabbar 路由是属于 `tabbar` 级别的，需要使用 `switchTabbar` 切换，`tabbar` 页面会有缓存，渲染性能较好。
 - `spa` 模板类似于前端的 `SPA 应用`，`tabbar` 完全是一个组件实现的。页面之间切换是通过前端状态控制，简单灵活，不受 `tabbar` 的配置限制，但性能不如 `tabbar` 模板。
 - 两者各有优点，按需选用。
 
@@ -73,7 +73,7 @@ pnpm create unibest my-project -t hbx-base # hbx的base模板
 pnpm create unibest my-project -t hbx-demo # hbx的demo模板，包含所有的demo
 ```
 
-> 2024-12-29<周日> 发表了一篇文章：[【unibest】可以去掉hbx模版了，base模板一统天下](https://mp.weixin.qq.com/s/ybunFNkjKfV5yVLOMvqscg?token=1696234630&lang=zh_CN)
+> 2024-12-29<周日> 发表了一篇文章：[【unibest】可以去掉 hbx 模版了，base 模板一统天下](https://mp.weixin.qq.com/s/ybunFNkjKfV5yVLOMvqscg?token=1696234630&lang=zh_CN)
 >
 > 就是说 hbx 模板可以退出历史舞台了。
 
