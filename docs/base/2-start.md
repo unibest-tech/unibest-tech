@@ -29,41 +29,7 @@ pnpm create unibest@latest my-project
 最新的模板支持如下：
 ![alt text](image-1.png)
 
-::: details 下面的在 2025-06-21 发布 v2.0 之后过期了
-
-![unibest templates](https://oss.laf.run/ukw0y1-site/xmind/unibest模板.png)
-
-`create unibest` 支持 `-t` 参数选择模板，目前已有两大类 `8` 个模板
-
-- `普通` 模板( `4个` ）：分别是 `base`、`tabbar`、`spa`、 `i18n`、`demo`。
-- `hbx` 模板(`2个` ）：分别是 `hbx-base`、`hbx-demo`。
-
-不带 `-t` 参数时会默认生成 `base` 模板。
-
-`base` 模板是最基本的模板，更新最及时，推荐使用 `base` 模板创建新项目。其他几个模板也是基于 `base` 模板得到的。 `demo` 模板则作为参考用。
-
-`base` 模板的改动会自动同步到其他几个分支，通过 `github actions` 实现。
-
-```sh
-# VS Code 模板
-pnpm create unibest my-project # 默认用 base 模板
-
-pnpm create unibest my-project -t base # 基础模板
-pnpm create unibest my-project -t tabbar # 自定义 tabbar 模板
-pnpm create unibest my-project -t spa # 单页应用 模板（使用一个组件模拟tabbar）
-pnpm create unibest my-project -t i18n # 多语言模板
-pnpm create unibest my-project -t demo # 所有demo的模板(包括i18n)
-
-# HBuilderX 模板，方便使用 uniCloud 云开发 (未来可以对接 uni-app x)
-pnpm create unibest my-project -t hbx-base # hbx的base模板
-pnpm create unibest my-project -t hbx-demo # hbx的demo模板，包含所有的demo
-```
-
-> 2024-12-29<周日> 发表了一篇文章：[【unibest】可以去掉 hbx 模版了，base 模板一统天下](https://mp.weixin.qq.com/s/ybunFNkjKfV5yVLOMvqscg?token=1696234630&lang=zh_CN)
->
-> 就是说 hbx 模板可以退出历史舞台了。
-
-:::
+> 旧的模板相关内容，见文末，留个纪念。
 
 ## 项目仓库地址
 
@@ -113,3 +79,41 @@ git commit -m "feat: init project"
 
 - 若代码里面自动引入的 `API` 报错，只需要 `pnpm dev` 即可。
 - 若代码运行后，`H5端` 浏览器界面底部没有 `tabbar`， 刷新浏览器或者再次 `pnpm dev` 即可。
+
+## 旧的模板生成相关内容
+
+::: details 下面的在 2025-06-21 发布 v2.0 之后过期了
+
+![unibest templates](https://oss.laf.run/ukw0y1-site/xmind/unibest模板.png)
+
+`create unibest` 支持 `-t` 参数选择模板，目前已有两大类 `8` 个模板
+
+- `普通` 模板( `4个` ）：分别是 `base`、`tabbar`、`spa`、 `i18n`、`demo`。
+- `hbx` 模板(`2个` ）：分别是 `hbx-base`、`hbx-demo`。
+
+不带 `-t` 参数时会默认生成 `base` 模板。
+
+`base` 模板是最基本的模板，更新最及时，推荐使用 `base` 模板创建新项目。其他几个模板也是基于 `base` 模板得到的。 `demo` 模板则作为参考用。
+
+`base` 模板的改动会自动同步到其他几个分支，通过 `github actions` 实现。
+
+```sh
+# VS Code 模板
+pnpm create unibest my-project # 默认用 base 模板
+
+pnpm create unibest my-project -t base # 基础模板
+pnpm create unibest my-project -t tabbar # 自定义 tabbar 模板
+pnpm create unibest my-project -t spa # 单页应用 模板（使用一个组件模拟tabbar）
+pnpm create unibest my-project -t i18n # 多语言模板
+pnpm create unibest my-project -t demo # 所有demo的模板(包括i18n)
+
+# HBuilderX 模板，方便使用 uniCloud 云开发 (未来可以对接 uni-app x)
+pnpm create unibest my-project -t hbx-base # hbx的base模板
+pnpm create unibest my-project -t hbx-demo # hbx的demo模板，包含所有的demo
+```
+
+> 2024-12-29<周日> 发表了一篇文章：[【unibest】可以去掉 hbx 模版了，base 模板一统天下](https://mp.weixin.qq.com/s/ybunFNkjKfV5yVLOMvqscg?token=1696234630&lang=zh_CN)
+>
+> 就是说 hbx 模板可以退出历史舞台了。
+
+:::
