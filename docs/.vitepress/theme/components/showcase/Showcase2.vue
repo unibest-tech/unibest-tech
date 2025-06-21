@@ -65,8 +65,7 @@ const cases = [
 </script>
 
 <template>
-  <div class="wrapper">
-    <h3 class="title-cls">部分优秀案例</h3>
+  <div class="VPFeatures VPHomeFeatures">
     <div class="cases-container">
       <el-card v-for="(item, index) in cases" :key="index" shadow="hover">
         <template #header>
@@ -80,27 +79,12 @@ const cases = [
 </template>
 
 <style scoped>
-.wrapper {
-  position: relative;
-  padding: 0 24px;
-}
-@media (min-width: 640px) {
-  .wrapper {
-    padding: 0 48px;
-  }
-}
-.title-cls {
-  margin: 20px auto;
-  max-width: 1152px;
-  color: var(--vp-button-brand-bg);
-}
-.cases-container {
+/* .cases-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
-  margin: 20px auto;
-  max-width: 1152px;
-}
+  margin: 20px 0;
+} */
 
 .case-title {
   font-size: 18px;
