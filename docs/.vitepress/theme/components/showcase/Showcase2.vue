@@ -65,26 +65,24 @@ const cases = [
 </script>
 
 <template>
-  <div class="VPFeatures VPHomeFeatures">
-    <div class="cases-container">
-      <el-card v-for="(item, index) in cases" :key="index" shadow="hover">
-        <template #header>
-          <span class="case-title">{{ item.name }}</span>
-          <span class="case-desc">{{ item.desc }}</span>
-        </template>
-        <el-image :src="item.image" />
-      </el-card>
-    </div>
+  <div class="cases-container">
+    <el-card v-for="(item, index) in cases" :key="index" shadow="hover">
+      <template #header>
+        <span class="case-title">{{ item.name }}</span>
+        <span class="case-desc">{{ item.desc }}</span>
+      </template>
+      <el-image :src="item.image" />
+    </el-card>
   </div>
 </template>
 
 <style scoped>
-/* .cases-container {
+.cases-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   margin: 20px 0;
-} */
+}
 
 .case-title {
   font-size: 18px;

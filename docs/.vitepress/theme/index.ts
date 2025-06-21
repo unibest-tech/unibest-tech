@@ -8,6 +8,7 @@ import HomeStar from './components/HomeStar.vue'
 import NavBarTitleAfter from './components/NavBarTitleAfter.vue'
 import HomeFeaturesBefore from './components/HomeFeaturesBefore.vue'
 import ShowCase from './components/showcase/ShowCase.vue'
+import ShowCase2 from './components/showcase/ShowCase2.vue'
 import FreshImage from './components/FreshImage.vue'
 
 import ElementPlus from 'element-plus'
@@ -26,6 +27,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // ...
     app.component('FreshImage', FreshImage)
+    app.component('ShowCase', ShowCase2)
     app.use(ElementPlus)
   },
 } satisfies Theme
