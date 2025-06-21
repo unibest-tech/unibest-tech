@@ -24,6 +24,38 @@
 ![alt text](image-4.png)
 ![alt text](image-3.png)
 
+关键代码如下：
+
+```ts
+/**
+ * tabbar 选择的策略，更详细的介绍见 tabbar.md 文件
+ * 0: 'NATIVE_TABBAR'  `完全原生 tabbar`
+ * 2: 'FULL_CUSTOM_TABBAR' `全自定义 tabbar`
+ * 1: 'HALF_CUSTOM_TABBAR' `半自定义 tabbar`
+ * 3: 'NO_TABBAR' `无 tabbar`
+ *
+ * 温馨提示：本文件的任何代码更改了之后，都需要重新运行，否则 pages.json 不会更新导致错误
+ */
+
+// TODO：通过这里切换使用tabbar的策略
+export const selectedTabbarStrategy = 0;
+
+// selectedTabbarStrategy==0 时，需要填 iconPath 和 selectedIconPath
+// selectedTabbarStrategy==1 or 2 时，需要填 icon 和 iconType
+// selectedTabbarStrategy==3 时，tabbarList 不生效
+export const tabbarList = [
+  {
+    iconPath: 'static/tabbar/home.png',
+    selectedIconPath: 'static/tabbar/homeHL.png',
+    pagePath: 'pages/index/index',
+    text: '首页',
+    icon: 'home',
+    iconType: 'uiLib',
+  },
+  // ...
+];
+```
+
 `tabbar` 相关配置统一配置在上面这个文件，`pages.config.ts` 已经默认引入。 ^\_^
 
 > 2025-06-21 周六，肝了一整天，留个纪念。
