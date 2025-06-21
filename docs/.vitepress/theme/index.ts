@@ -6,8 +6,7 @@ import './custom.css'
 
 import HomeStar from './components/HomeStar.vue'
 import NavBarTitleAfter from './components/NavBarTitleAfter.vue'
-import HomeFeaturesBefore from './components/HomeFeaturesBefore.vue'
-import ShowCase from './components/showcase/ShowCase.vue'
+import HomeFeaturesAfter from './components/HomeFeaturesAfter.vue'
 import ShowCase2 from './components/showcase/ShowCase2.vue'
 import FreshImage from './components/FreshImage.vue'
 
@@ -21,7 +20,7 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       // 'home-hero-info-after': () => h(HomeStar),
       'nav-bar-title-after': () => h(NavBarTitleAfter),
-      'home-features-before': () => h(ShowCase),
+      'home-features-after': () => h(HomeFeaturesAfter),
     })
   },
   enhanceApp({ app, router, siteData }) {
