@@ -15,11 +15,14 @@
   - 劣势：首次点击 `tababr` 会闪烁，无缓存。
 - `无 tabbar`，只有一个页面入口，底部无 `tabbar` 显示；常用语临时活动页。
 
+上述文档在代码中也有一份，方便开发者查阅。`./src/layouts/fg-tabbar/tabbar.md`
+
 > 注意：花里胡哨的效果需要自己实现，本模版不提供。
 
 总览如下，文件路径为 `./src/layouts/fg-tabbar/tabbarList.js`。首先选择使用哪个 `策略`，然后配置对应的 `tabbarList`。
 
-![alt text](image-2.png)
+![alt text](image-4.png)
+![alt text](image-3.png)
 
 `tabbar` 相关配置统一配置在上面这个文件，`pages.config.ts` 已经默认引入。 ^\_^
 
