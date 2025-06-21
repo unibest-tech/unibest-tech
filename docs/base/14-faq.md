@@ -140,4 +140,27 @@ git commit -m "feat: xxx" --no-verify
 
 ![alt text](14-3.png)
 
+## 15. ios 模拟器运行报错
+
+```text
+14:20:36.428 编译器版本：4.66（vue3）
+14:20:36.428 正在编译中...
+14:20:38.259 ✘ [ERROR] Cannot start service: Host version "0.20.2" does not match binary version "0.25.5"
+14:20:38.259 1 error
+14:20:38.264 failed to load config from /Users/burtlai/unibest-projects/unibest/vite.config.ts
+14:20:38.264 error during build:
+14:20:38.264 Error: The service was stopped
+14:20:38.264     at /Users/burtlai/unibest-projects/unibest/node_modules/.pnpm/esbuild@0.20.2/node_modules/esbuild/lib/main.js:1084:25
+14:20:38.264     at responseCallbacks.<computed> (/Users/burtlai/unibest-projects/unibest/node_modules/.pnpm/esbuild@0.20.2/node_modules/esbuild/lib/main.js:704:9)
+14:20:38.264     at Socket.afterClose (/Users/burtlai/unibest-projects/unibest/node_modules/.pnpm/esbuild@0.20.2/node_modules/esbuild/lib/main.js:694:28)
+14:20:38.265     at Socket.emit (node:events:536:35)
+14:20:38.265     at endReadableNT (node:internal/streams/readable:1698:12)
+14:20:38.265     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+14:20:38.276 已停止运行...
+```
+
+![alt text](14-5.png)
+
+把 `package.json` 中的 `esbuild` 版本改为 `0.20.2` 即可。
+
 全文完~
