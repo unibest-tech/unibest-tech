@@ -14,28 +14,22 @@
 ```bash
 # 如果没有 pnpm，请先安装: npm i -g pnpm
 pnpm create unibest my-project
-# 时不时加一下 @latest 标识，这样可以使用最新版本的 create-unibest (2025-06-04 发布了  v1.18.5)
+# 时不时加一下 @latest 标识，这样可以使用最新版本的 create-unibest
 pnpm create unibest@latest my-project
 ```
 
-npm 创建如下(不推荐)
-:::details
-如果使用 `npm`，可能有缓存，需要加上 `@latest` 标识，如果创建失败，请使用 `pnpm` 安装。
-
-```bash
-npm create unibest my-project
-# 如果提示报错，或者生成的项目版本太旧，请使用下面的命令，增加 @latest 标识
-npm create unibest@latest my-project
-```
-
-:::
 实际操作截图如下：
-
-![create project](./assets/2-1.png)
 
 `create-unibest` 在 `v1.10.0` 开始会有版本号，如下：
 
 ![alt text](./assets/2-2.png)
+
+`2025-06-21` 发布 `v2.0` 精简了很多模板，`base`、`tabbar`、`spa` 合并成了新的 `base` 模板（新的 `base` 模板可以在代码层面得到所有的四种 `tabbar` 形式），同时去掉了 `hbx-base`、`hbx-demo`。
+
+最新的模板支持如下：
+![alt text](image-1.png)
+
+::: details 下面的在 2025-06-21 发布 v2.0 之后过期了
 
 ![unibest templates](https://oss.laf.run/ukw0y1-site/xmind/unibest模板.png)
 
@@ -49,14 +43,6 @@ npm create unibest@latest my-project
 `base` 模板是最基本的模板，更新最及时，推荐使用 `base` 模板创建新项目。其他几个模板也是基于 `base` 模板得到的。 `demo` 模板则作为参考用。
 
 `base` 模板的改动会自动同步到其他几个分支，通过 `github actions` 实现。
-
-::: details `tabbar 模板` 和 `spa 模板` 的区别
-
-- `tabbar` 模板里面的 tabbar 路由是属于 `tabbar` 级别的，需要使用 `switchTabbar` 切换，`tabbar` 页面会有缓存，渲染性能较好。
-- `spa` 模板类似于前端的 `SPA 应用`，`tabbar` 完全是一个组件实现的。页面之间切换是通过前端状态控制，简单灵活，不受 `tabbar` 的配置限制，但性能不如 `tabbar` 模板。
-- 两者各有优点，按需选用。
-
-:::
 
 ```sh
 # VS Code 模板
@@ -77,13 +63,15 @@ pnpm create unibest my-project -t hbx-demo # hbx的demo模板，包含所有的d
 >
 > 就是说 hbx 模板可以退出历史舞台了。
 
+:::
+
 ## 项目仓库地址
 
 `github` 和 `gitee` 实时同步，代码一致。
 
 ### 普通模板：
 
-- https://github.com/feige996/unibest
+- https://github.com/unibest-tech/unibest
 - https://gitee.com/feige996/unibest
 
 > `demo` 模板是在 `hello-unibest` 项目中，仓库地址如下：
@@ -91,19 +79,15 @@ pnpm create unibest my-project -t hbx-demo # hbx的demo模板，包含所有的d
 - https://github.com/feige996/hello-unibest
 - https://gitee.com/feige996/hello-unibest
 
-### hbx 模板
-
-- https://github.com/uni-run/unibest-hbx
-
-> `hbx` 目前由 `青谷` 大佬维护，微信号：`qingguxixi`，[青谷 github 地址](https://github.com/Xiphin) 。
+> 未来 `github` 上的仓库都可能迁移到 `unibest-tech` 组织下，`gitee` 上的仓库则不会迁移。
 
 ## 安装、运行
 
 ```bash [pnpm]
 pnpm i
-pnpm dev
-# dev默认运行的是h5，其他平台执行dev:<uni-platform>，如:
-pnpm dev:mp-weixin
+pnpm dev     # 运行h5
+pnpm dev:mp  # 运行微信小程序
+pnpm dev:app # 运行App
 ```
 
 `pnpm dev` 之后在浏览器打开 `http://localhost:9000/`。
