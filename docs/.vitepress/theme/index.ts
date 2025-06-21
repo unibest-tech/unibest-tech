@@ -7,7 +7,7 @@ import './custom.css'
 import HomeStar from './components/HomeStar.vue'
 import NavBarTitleAfter from './components/NavBarTitleAfter.vue'
 import HomeFeaturesAfter from './components/HomeFeaturesAfter.vue'
-import ShowCase2 from './components/showcase/ShowCase2.vue'
+import Showcase2 from './components/showcase/Showcase2.vue'
 import FreshImage from './components/FreshImage.vue'
 
 import ElementPlus from 'element-plus'
@@ -26,7 +26,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // ...
     app.component('FreshImage', FreshImage)
-    app.component('ShowCase', ShowCase2)
+    app.component('ShowCase', Showcase2)
     app.use(ElementPlus)
   },
 } satisfies Theme
