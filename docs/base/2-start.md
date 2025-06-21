@@ -29,6 +29,8 @@ pnpm create unibest@latest my-project
 最新的模板支持如下：
 ![alt text](image-1.png)
 
+新的 `base` 模板如何切换不同的 tabbar, 见 [tabbar 专题](./2-tabbar.md)
+
 > 旧的模板相关内容，见文末，留个纪念。
 
 ## 项目仓库地址
