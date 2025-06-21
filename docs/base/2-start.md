@@ -24,7 +24,7 @@ pnpm create unibest@latest my-project
 
 ![alt text](./assets/2-2.png)
 
-`2025-06-21` 发布 `v2.0` 精简了很多模板，`base`、`tabbar`、`spa` 合并成了新的 `base` 模板（新的 `base` 模板可以在代码层面得到所有的四种 `tabbar` 形式），同时去掉了 `hbx-base`、`hbx-demo`。
+`2025-06-21` 发布 `v2.0.0` 精简了很多模板，`base`、`tabbar`、`spa` 合并成了新的 `base` 模板（新的 `base` 模板可以在代码层面得到所有的四种 `tabbar` 形式），同时去掉了 `hbx-base`、`hbx-demo`。
 
 最新的模板支持如下：
 ![alt text](image-1.png)
@@ -32,22 +32,6 @@ pnpm create unibest@latest my-project
 新的 `base` 模板如何切换不同的 tabbar, 见 [tabbar 专题](./2-tabbar.md)
 
 > 旧的模板相关内容，见文末，留个纪念。
-
-## 项目仓库地址
-
-`github` 和 `gitee` 实时同步，代码一致。
-
-### 普通模板：
-
-- https://github.com/unibest-tech/unibest
-- https://gitee.com/feige996/unibest
-
-> `demo` 模板是在 `hello-unibest` 项目中，仓库地址如下：
-
-- https://github.com/feige996/hello-unibest
-- https://gitee.com/feige996/hello-unibest
-
-> 未来 `github` 上的仓库都可能迁移到 `unibest-tech` 组织下，`gitee` 上的仓库则不会迁移。
 
 ## 安装、运行
 
@@ -82,9 +66,25 @@ git commit -m "feat: init project"
 - 若代码里面自动引入的 `API` 报错，只需要 `pnpm dev` 即可。
 - 若代码运行后，`H5端` 浏览器界面底部没有 `tabbar`， 刷新浏览器或者再次 `pnpm dev` 即可。
 
+## 项目仓库地址
+
+`github` 和 `gitee` 实时同步，代码一致。
+
+### 普通模板：
+
+- https://github.com/unibest-tech/unibest
+- https://gitee.com/feige996/unibest
+
+> `demo` 模板是在 `hello-unibest` 项目中，仓库地址如下：
+
+- https://github.com/feige996/hello-unibest
+- https://gitee.com/feige996/hello-unibest
+
+> 未来 `github` 上的仓库都可能迁移到 `unibest-tech` 组织下。
+
 ## 旧的模板生成相关内容
 
-::: details 下面的在 2025-06-21 发布 v2.0 之后过期了
+::: details 下面的在 2025-06-21 发布 v2.0.0 之后过期了
 
 ![unibest templates](https://oss.laf.run/ukw0y1-site/xmind/unibest模板.png)
 
