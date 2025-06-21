@@ -2,8 +2,8 @@
 
 <template>
   <div class="wrapper">
-    <h3 class="title-cls">每天创建 unibest 项目数量图</h3>
-    <div class="cases-container">一个图表</div>
+    <!-- <h3 class="title-cls">每天创建 unibest 项目数量图</h3>
+    <div class="cases-container">一个图表</div> -->
   </div>
 </template>
 
