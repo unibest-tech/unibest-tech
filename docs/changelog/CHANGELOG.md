@@ -1,5 +1,7 @@
 # CHANGELOG 更新日志
 
+> 完整的更新日志，参考 [releases](https://github.com/unibest-tech/unibest/releases)
+
 ## v3.0.0(2025-06-21-周六)
 
 ### 重大更新
