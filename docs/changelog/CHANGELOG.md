@@ -6,6 +6,8 @@
 
 - 原本的 `base`、`tabbar`、`spa` 合并为新的 `base` 模板。并把新的 `base` 分支重命名为 `main` 分支。详情见 [tabbar 专题](/base/2-tabbar.md)
 
+- 原本的 `main` 分支是文档相关的分支，已经单独放到新的仓库了。
+
 ### 格式化工具优化
 
 - 鉴于 `oxlint` 暂时还不支持 `vue` 文件，考虑到不少团队很大，无法检测 `vue` 文件确实不妥，就使用了 `antfu` 的 `eslint-config`。
