@@ -119,6 +119,47 @@ easycom: {
 ]
 ```
 
+## 安装 `uview-plus` 库
+
+- 1. 安装 `uview-plus` 库：
+
+```sh
+pnpm add uview-plus
+```
+
+- 2. `pages.config.ts` 文件 `easycom.custom` 添加相关配置：
+
+```diff
+easycom: {
+  autoscan: true,
+  custom: {
++   '^u--(.*)': 'uview-plus/components/u-$1/u-$1.vue',
++   '^up-(.*)': 'uview-plus/components/u-$1/u-$1.vue',
++   '^u-([^-].*)': 'uview-plus/components/u-$1/u-$1.vue',
+  },
+},
+```
+
+- 3. ` tsconfig.json` 文件 `compilerOptions.types` 添加相关配置：
+
+```diff
+"types": [
+    "@dcloudio/types",
+    "@types/wechat-miniprogram",
++   "uview-plus/types",,
+    "./components.d.ts",
+    "./global.d.ts"
+]
+```
+
+- 4. `uni.scss` 中末尾引入 `uview-plus` 的颜色变量
+
+```scss
+@import 'uview-plus/theme.scss'; // /* 行为相关颜色 */
+```
+
+- 5.
+
 > 其他 UI 库的安装类似，不再赘述。
 
 全文完~
