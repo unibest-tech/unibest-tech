@@ -19,12 +19,11 @@
 
 > 注意：花里胡哨的效果需要自己实现，本模版不提供。
 
-总览如下，文件路径为 `./src/layouts/fg-tabbar/tabbarList.js`。首先选择使用哪个 `策略`，然后配置对应的 `tabbarList`。
+总览如下，文件路径为 `./src/layouts/fg-tabbar/tabbarList.js`。
 
 ![alt text](image-4.png)
-![alt text](image-3.png)
 
-关键代码如下：
+首先选择使用哪个 `策略`，然后配置对应的 `tabbarList`。关键代码如下：
 
 ```ts
 /**
