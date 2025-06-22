@@ -19,13 +19,14 @@
 
 > 注意：花里胡哨的效果需要自己实现，本模版不提供。
 
-总览如下，文件路径为 `./src/layouts/fg-tabbar/tabbarList.js`。
+## 如何配置
 
 ![alt text](image-4.png)
 
 首先选择使用哪个 `策略`，然后配置对应的 `tabbarList`。关键代码如下：
 
 ```ts
+// 文件路径为 `./src/layouts/fg-tabbar/tabbarList.js`
 /**
  * tabbar 选择的策略，更详细的介绍见 tabbar.md 文件
  * 0: 'NATIVE_TABBAR'  `完全原生 tabbar`
