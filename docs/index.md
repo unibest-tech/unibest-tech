@@ -29,7 +29,7 @@ hero:
 features:
   - icon: ⚡️
     title: uniapp + Vue3 + Vite5 + Pnpm
-    details: uniapp + Vue3 + Vite5 + Pnpm + setup 语法糖 + TypeScript 最强组合，飞一般的编码体验，支持 v3 快捷生成 vue 文件
+    details: uniapp + Vue3 + Vite5 + Pnpm + setup 语法糖 + TypeScript 最强组合，飞一般的编码体验
     linkText: 进入 uniapp 官网
     link: https://uniapp.dcloud.net.cn/
 
