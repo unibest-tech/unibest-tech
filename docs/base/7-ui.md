@@ -158,7 +158,36 @@ easycom: {
 @import 'uview-plus/theme.scss'; // /* 行为相关颜色 */
 ```
 
-- 5.
+## 安装 `sard-uniapp` 库
+
+- 1. 安装 `sard-uniapp` 库：
+
+```sh
+pnpm add sard-uniapp
+```
+
+- 2. `pages.config.ts` 文件 `easycom.custom` 添加相关配置：
+
+```diff
+easycom: {
+  autoscan: true,
+  custom: {
++   '^sar-(.*)': 'sard-uniapp/components/$1/$1.vue',
+  },
+},
+```
+
+- 3. ` tsconfig.json` 文件 `compilerOptions.types` 添加相关配置：
+
+```diff
+"types": [
+  "@dcloudio/types",
+  "@types/wechat-miniprogram",
++ "sard-uniapp/global",
+  "./components.d.ts",
+  "./global.d.ts"
+]
+```
 
 > 其他 UI 库的安装类似，不再赘述。
 
