@@ -21,6 +21,7 @@
 ## 原子类 CSS
 
 - [UnoCSS](https://unocss.dev/) -- `五星推荐⭐⭐⭐⭐⭐`
+- [UnoCss 中文](https://unocss.jiangruyi.com/)
 - [tailwindcss](https://tailwindcss.com/)
 
 ## icons
@@ -48,8 +49,8 @@
 
 ## 图表库
 
-- [ucharts](https://www.ucharts.cn/v2/#/)
 - [lime-echart](https://gitee.com/liangei/lime-echart)
+- [ucharts](https://www.ucharts.cn/v2/#/)
 
 > 其他可以在 `uni-app` 插件市场找：[uniapp chart](https://ext.dcloud.net.cn/search?q=chart)
 
