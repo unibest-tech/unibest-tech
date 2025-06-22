@@ -1,4 +1,4 @@
-# 自动生成代码
+# 自动生成接口 API
 
 ![alt text](17-good.png)
 
@@ -10,13 +10,13 @@
 
 ## 如何使用
 
-你只需要将接口文档对应的接口配置url，复制到根目录的 `openapi-ts-request.config.ts` 插件的配置文件中的 `schemaPath` 字段中，然后运行 `npm run openapi-ts-request` 命令，就可以生成代码。
-支持同时配置多个接口文档url，生成的代码默认会放在 `src/service/app` 目录下，你可以自己调整生成代码的目录。
+你只需要将接口文档对应的接口配置 url，复制到根目录的 `openapi-ts-request.config.ts` 插件的配置文件中的 `schemaPath` 字段中，然后运行 `npm run openapi-ts-request` 命令，就可以生成代码。
+支持同时配置多个接口文档 url，生成的代码默认会放在 `src/service/app` 目录下，你可以自己调整生成代码的目录。
 
 配置如下：
 
 ```ts
-import type { GenerateServiceProps } from 'openapi-ts-request'
+import type { GenerateServiceProps } from 'openapi-ts-request';
 
 export default [
   {
@@ -28,7 +28,7 @@ export default [
     reactQueryMode: 'vue',
     isGenJavaScript: false,
   },
-] as GenerateServiceProps[]
+] as GenerateServiceProps[];
 ```
 
 ## 生成 ts 代码
@@ -36,12 +36,12 @@ export default [
 ts 的 type 类型会默认生成在 `src/service/app/types.ts` 文件，你可以通过引入它们进行使用。
 
 ```ts
-import { type Category } from '@/service/app'
+import { type Category } from '@/service/app';
 
 const category: Category = {
   id: 1,
   name: '张三',
-}
+};
 ```
 
 ## 生成 uni.request 代码
@@ -49,12 +49,12 @@ const category: Category = {
 ts 的 uni.request 客户端会默认生成在 `src/service/app` 目录下，以模块名进行分类，你可以通过引入它们进行使用。
 
 ```ts
-import { getPetById } from '@/service/app'
+import { getPetById } from '@/service/app';
 
 onShow(() => {
-  const res = await getPetById({ id: 1 })
-  console.log('res: ', res)
-})
+  const res = await getPetById({ id: 1 });
+  console.log('res: ', res);
+});
 ```
 
 ## 生成 vue-query 代码
