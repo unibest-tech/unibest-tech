@@ -3,9 +3,11 @@
 - 前置依赖
 
   - **Node.js** - `>=v20` (我的是 `v22.13.0`)
-  - **pnpm** - `>=8+` (我的是 `10.11.0`)
+  - **pnpm** - `>=10+` (我的是 `10.11.0`)
   - **`VSCode`** - 可选 `WebStrom`
   - **`HBuilderX`** - `APP` 的运行和发布还是离不开它
+
+> `pnpm 9` 目前出现以下问题：`ERR PNPM INVALID WORKSPACE CONFIGURATIoN packages field missing or empty`
 
 ## 创建项目
 

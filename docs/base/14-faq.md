@@ -169,4 +169,10 @@ git commit -m "feat: xxx" --no-verify
 
 把 `package.json` 中的 `esbuild` 版本改为 `0.20.2` 即可。
 
+## 16. pnpm i 报错
+
+`pnpm 9` 目前出现以下问题：`ERR PNPM INVALID WORKSPACE CONFIGURATIoN packages field missing or empty`
+
+升级到 `pnpm 10` 即可。
+
 全文完~
