@@ -24,7 +24,7 @@ hero:
       link: /advanced/showcase/showcase
     - theme: alt
       text: 演示DEMO
-      link: https://feige996.github.io/hello-unibest/
+      link: https://unibest-tech.github.io/hello-unibest/#/
 
 features:
   - icon: ⚡️
