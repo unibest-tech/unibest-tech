@@ -19,7 +19,7 @@
 - uv-ui (uveiw 系) - [文档地址](https://www.uvui.cn/)
 - uview-plus (uveiw 系) - [文档地址](https://uiadmin.net/uview-plus/)
 - Wot Design Uni (wot 系) - [文档地址](https://wot-design-uni.netlify.app/)
-- TuniaoUI （图鸟系） - [文档地址](https://vue3.tuniaokj.com/zh-CN/)
+- TuniaoUI （图鸟系） - [文档地址](https://vue3.tuniaokj.com/)
 - Sard uniapp （Sard系） - [文档地址](https://sard.wzt.zone/sard-uniapp-docs/)
 
 还有 2 个 UI 框架也很优秀，大部分组件开源免费，还有一部分组件是收费的，有需要的可以看看。
