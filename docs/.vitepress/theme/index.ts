@@ -9,7 +9,6 @@ import NavBarTitleAfter from './components/NavBarTitleAfter.vue'
 import HomeFeaturesAfter from './components/HomeFeaturesAfter.vue'
 import Showcase2 from './components/showcase/Showcase2.vue'
 import FreshImage from './components/FreshImage.vue'
-
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
