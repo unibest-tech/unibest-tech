@@ -171,8 +171,10 @@ git commit -m "feat: xxx" --no-verify
 
 ## 16. pnpm i 报错
 
-`pnpm 9` 目前出现以下问题：`ERR PNPM INVALID WORKSPACE CONFIGURATIoN packages field missing or empty`
+`pnpm 9 + node 18` 目前出现以下问题：`ERR PNPM INVALID WORKSPACE CONFIGURATIoN packages field missing or empty`
 
-升级到 `pnpm 10` 即可。
+群友说：`node 22` 没有问题。原话如下：`我昨天也是这样，pnpm9+node18，今天升级到node22就好了，没有动pnpm`。
+
+> 如果还不行，那就把 pnpm 升级到 `pnpm 10`。
 
 全文完~
