@@ -21,7 +21,7 @@
 import { ref } from 'vue';
 
 // 控制弹窗显示/隐藏的响应式变量
-const dialogVisible = ref(true);
+const dialogVisible = ref(false);
 
 const confirm = () => {
   window.open('https://docs.qq.com/form/page/DVVF0TEdmY2ZHV3RE', '_blank');
