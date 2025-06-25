@@ -119,7 +119,7 @@ git commit -m "feat: xxx" --no-verify
 
 ## 13. `base` 模板如何接 `uniCloud` ?
 
-- 1. 操作方案：直接在原始项目目录上右键（就是导入 unibest 项目的 src 文件夹），重新识别项目类型，就可以关联 `uniCloud` 了，然后用原始项目直接运行就可以了，不需要再 `pnpm dev:app` 后导入 `dist/dev/app` 再运行了。
+- 1. 操作方案：直接在原始项目目录上右键（就是导入整个 unibest 项目文件夹），重新识别项目类型，就可以关联 `uniCloud` 了，然后用原始项目直接运行就可以了，不需要再 `pnpm dev:app` 后导入 `dist/dev/app` 再运行了。
 
 - 2. 问：其他模板可以吗？答：其他模板也可以，操作同上。
 
