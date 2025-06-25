@@ -180,7 +180,7 @@ export default defineConfig({
         base: '/advanced/',
         items: [
           { text: '🥤 打赏', link: 'rewards/rewards' },
-          { text: '微信交流群', link: 'wechat/wechat' },
+          { text: '交流群', link: 'wechat/wechat' },
           { text: '赞助榜', link: 'sponsor/sponsor' },
         ],
       },
