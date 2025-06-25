@@ -76,3 +76,56 @@ export const tabbarList = [
 `tabbar` 相关配置统一配置在上面这个文件，`pages.config.ts` 已经默认引入。 ^\_^
 
 > 2025-06-21 周六，肝了一整天，留个纪念。
+
+## v3.3.0
+
+> 2025-06-25 v3.3.0 版（重新梳理 tabbar 配置）
+
+上一版本太追求数据的统一管理，但是会让只需要默认配置的用户感到头大。参考 vue 的渐进式开发思路，我们提供从简到繁的配置方案。
+默认就是 原生 tabbar，不需要关心 本文件夹里面的内容。(这是默认配置)
+需要自定义 tabbar 的才需要关心这个文件。
+
+```ts
+/**
+ * 2025-06-25 v3.3.0版（重新梳理tabbar配置）
+ *
+ * 1)原生tabbar，不需要关心 本文件夹里面的内容。(这是默认配置)
+ * 2)自定义tabbar（带缓存），保留 `pages.config.ts 的 tabBar配置`，修改本文件对应的代码。
+ * 3)自定义tabbar（不带缓存），虽然我认为这是个伪需求，但是问卷调查中确实有人使用这个。要删除 `pages.config.ts 的 tabBar配置`。
+ * 4)无tabbar，直接删除 `pages.config.ts 的 tabBar配置`。（同样不需要关心`layouts/fg-tabbar`）
+ *
+ */
+
+// TODO：是否开启自定义tabbar，默认不开启
+// 不开启表示使用原生tabbar，开启表示使用自定义tabbar
+export const CUSTOM_TABBAR_ENABLE = false;
+// TODO: 是否开启自定义tabbar的无缓存模式，默认不开启
+// 开启表示使用自定义tabbar的无缓存模式，并且需要把 `pages.config.ts` 里面的 tabBar 配置删除
+export const CUSTOM_TABBAR_NO_CACHE = false;
+
+/**
+ * 根据您选择的UI框架，配置相应的字段信息
+ * pagePath 需要与 pages.config.ts 里面的 tabBar.list 里面的 pagePath 保持一致，这样才有缓存效果。
+ * iconType: uiLib, unocss, local, iconfont。
+ */
+export const tabbarList = [
+  {
+    pagePath: 'pages/index/index',
+    text: '首页',
+    icon: 'home',
+    // 选用 UI  框架自带的 icon时，iconType 为 uiLib
+    iconType: 'uiLib',
+  },
+  {
+    pagePath: 'pages/about/about',
+    text: '关于',
+    icon: 'i-carbon-code',
+    // 注意 unocss 的图标需要在 页面上引入一下，或者配置到 unocss.config.ts 的 safelist 中
+    iconType: 'unocss',
+  },
+];
+```
+
+上面的代码已经传到 `new-tabbar` 分支了，欢迎大家积极讨论：
+
+讨论地址：[【tabbar】模式探讨 issue #158](https://github.com/unibest-tech/unibest/issues/158)
