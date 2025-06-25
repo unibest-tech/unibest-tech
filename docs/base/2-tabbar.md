@@ -1,5 +1,7 @@
 # tabbar 专题
 
+tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TEdmY2ZHV3RE)
+
 ## v3.3.0
 
 > 2025-06-25 v3.3.0 版（重新梳理 tabbar 配置）
@@ -51,7 +53,7 @@ export const tabbarList = [
 
 上面的是最新的，我觉得更合理，现在公示 7 天。代码已经传到 `new-tabbar` 分支了，如果大家没有异议，7 天后将合并到主分支。
 
-讨论地址：[【tabbar】模式探讨 #158](https://github.com/unibest-tech/unibest/issues/158)
+讨论地址：[【tabbar】模式探讨 issue #158](https://github.com/unibest-tech/unibest/issues/158)
 
 ## v3.0.0(4 种情况)
 
