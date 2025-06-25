@@ -51,6 +51,8 @@ export const tabbarList = [
 
 上面的是最新的，我觉得更合理，现在公示 7 天。代码已经传到 `new-tabbar` 分支了，如果大家没有异议，7 天后将合并到主分支。
 
+讨论地址：[【tabbar】模式探讨 #158](https://github.com/unibest-tech/unibest/issues/158)
+
 ## v3.0.0(4 种情况)
 
 > 2025-06-21 开始，新的 `base` 模板同时支持旧的 `tabbar` 和 `spa` 模板，这里大致介绍一下使用。(`tabbar` 和 `spa` 模板已经不再需要了。)
