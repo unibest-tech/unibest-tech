@@ -1,5 +1,9 @@
 # 升级指南
 
+> 先插一句，有群友直接 `merge` `unibest 里面的 main 分支`，需要的也可以试试。
+>
+> 如果 `OK` 的话，下面的就不需要了。
+
 分为 `6` 部分的内容：(2025-06-14 周六)
 
 - `uniapp sdk 升级`
@@ -123,14 +127,14 @@ pnpm add -D unocss@65.4.2 # 注意不要贪最新，最新的 v66+ 有问题，�
 
 ```ts
 // https://www.npmjs.com/package/@uni-helper/unocss-preset-uni
-import { presetUni } from '@uni-helper/unocss-preset-uni'
+import { presetUni } from '@uni-helper/unocss-preset-uni';
 import {
   defineConfig,
   presetIcons,
   presetAttributify,
   transformerDirectives,
   transformerVariantGroup,
-} from 'unocss'
+} from 'unocss';
 
 export default defineConfig({
   presets: [
@@ -185,7 +189,7 @@ export default defineConfig({
       '3xs': ['18rpx', '26rpx'],
     },
   },
-})
+});
 ```
 
 3、 更新 `vite.config.ts` 中 `unocss` 的引入方式：
