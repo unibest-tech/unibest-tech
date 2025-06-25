@@ -164,7 +164,15 @@ export default defineConfig({
         ],
       },
       {
-        text: '⭐ 优秀案例',
+        text: '⭐ 联系我',
+        link: '/advanced/contact/contact',
+      },
+      {
+        text: '需求池',
+        link: '/advanced/roadmap/roadmap',
+      },
+      {
+        text: '优秀案例',
         link: '/advanced/showcase/showcase',
       },
       {

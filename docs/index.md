@@ -20,8 +20,8 @@ hero:
       text: 🥤 打赏
       link: /advanced/rewards/rewards
     - theme: alt
-      text: ⭐ 优秀案例
-      link: /advanced/showcase/showcase
+      text: ⭐ 联系我
+      link: /advanced/contact/contact
     - theme: alt
       text: 演示DEMO
       link: https://unibest-tech.github.io/hello-unibest/#/
