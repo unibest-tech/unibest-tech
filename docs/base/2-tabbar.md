@@ -1,8 +1,12 @@
 # tabbar 专题
 
-## v3.3.0（精简到 2 种情况）
+## v3.3.0
 
 > 2025-06-25 v3.3.0 版（重新梳理 tabbar 配置）
+
+上一版本太追求数据的统一管理，但是会让只需要默认配置的用户感到头大。参考 vue 的渐进式开发思路，我们提供从简到繁的配置方案。
+默认就是 原生 tabbar，不需要关心 本文件夹里面的内容。(这是默认配置)
+需要自定义 tabbar 的才需要关心这个文件。
 
 ```ts
 /**
@@ -11,14 +15,15 @@
  * 1)原生tabbar，不需要关心 本文件夹里面的内容。(这是默认配置)
  * 2)自定义tabbar（带缓存），保留 `pages.config.ts 的 tabBar配置`，修改本文件对应的代码。
  * 3)自定义tabbar（不带缓存），虽然我认为这是个伪需求，但是问卷调查中确实有人使用这个。要删除 `pages.config.ts 的 tabBar配置`。
- * 4)无tabbar，直接删除下面的tabBar配置即可。（同样不需要关心`layouts/fg-tabbar`）
+ * 4)无tabbar，直接删除 `pages.config.ts 的 tabBar配置`。（同样不需要关心`layouts/fg-tabbar`）
  *
- * 温馨提示：这样算下来就只剩2种了，一个是原生tabbar，一个是带缓存的自定义tabbar(简称自定义tabbar)。
  */
 
-// TODO：是否开启自定义tabbar，默认不开启(不开启表示使用原生tabbar，开启表示使用自定义tabbar)
+// TODO：是否开启自定义tabbar，默认不开启
+// 不开启表示使用原生tabbar，开启表示使用自定义tabbar
 export const CUSTOM_TABBAR_ENABLE = false;
-// TODO: 是否开启自定义tabbar的无缓存模式，默认不开启（开启表示使用自定义tabbar的无缓存模式，并且需要把 `pages.config.ts` 里面的 tabBar 配置删除）
+// TODO: 是否开启自定义tabbar的无缓存模式，默认不开启
+// 开启表示使用自定义tabbar的无缓存模式，并且需要把 `pages.config.ts` 里面的 tabBar 配置删除
 export const CUSTOM_TABBAR_NO_CACHE = false;
 
 /**
