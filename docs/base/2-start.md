@@ -13,9 +13,9 @@
 
 ```bash
 # 如果没有 pnpm，请先安装: npm i -g pnpm
-pnpm create unibest my-project
+pnpm create unibest
 # 时不时加一下 @latest 标识，这样可以使用最新版本的 create-unibest
-pnpm create unibest@latest my-project
+pnpm create unibest@latest
 ```
 
 实际操作截图如下：
@@ -101,17 +101,13 @@ git commit -m "feat: init project"
 
 ```sh
 # VS Code 模板
-pnpm create unibest my-project # 默认用 base 模板
+pnpm create unibest # 默认用 base 模板
 
-pnpm create unibest my-project -t base # 基础模板
-pnpm create unibest my-project -t tabbar # 自定义 tabbar 模板
-pnpm create unibest my-project -t spa # 单页应用 模板（使用一个组件模拟tabbar）
-pnpm create unibest my-project -t i18n # 多语言模板
-pnpm create unibest my-project -t demo # 所有demo的模板(包括i18n)
-
-# HBuilderX 模板，方便使用 uniCloud 云开发 (未来可以对接 uni-app x)
-pnpm create unibest my-project -t hbx-base # hbx的base模板
-pnpm create unibest my-project -t hbx-demo # hbx的demo模板，包含所有的demo
+pnpm create unibest -t base # 基础模板
+pnpm create unibest -t tabbar # 自定义 tabbar 模板
+pnpm create unibest -t spa # 单页应用 模板（使用一个组件模拟tabbar）
+pnpm create unibest -t i18n # 多语言模板
+pnpm create unibest -t demo # 所有demo的模板(包括i18n)
 ```
 
 > 2024-12-29<周日> 发表了一篇文章：[【unibest】可以去掉 hbx 模版了，base 模板一统天下](https://mp.weixin.qq.com/s/ybunFNkjKfV5yVLOMvqscg?token=1696234630&lang=zh_CN)
