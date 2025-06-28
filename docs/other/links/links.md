@@ -2,8 +2,8 @@
 
 ## Unibest Demo 分支演示地址
 
-- [演示地址](https://feige996.github.io/hello-unibest/#/)
-- [仓库地址-github](https://github.com/feige996/hello-unibest)
+- [演示地址](https://unibest-tech.github.io/hello-unibest/#/)
+- [仓库地址-github](https://github.com/unibest-tech/hello-unibest)
 - [仓库地址-gitee](https://gitee.com/feige996/hello-unibest)
 
 ## UI 组件库
