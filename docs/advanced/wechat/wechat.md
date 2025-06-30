@@ -2,7 +2,7 @@
 
 千万记得 `先看一遍文档`，可以解决大部分基础疑问。
 
-不再提供微信交流群，如果需要可以付费入群，[联系我](/advanced/contact/contact)。
+不再提供微信交流群，如果需要可以付费 `20元` 入群，[联系我](/advanced/contact/contact)。
 
 [需求池](/advanced/roadmap/roadmap)
 
