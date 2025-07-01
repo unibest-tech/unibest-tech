@@ -5,7 +5,9 @@
 ## QQ 交流群
 
 ①②③④ 群已满，下面是 ⑤ 群。
-![alt text](https://oss.laf.run/ukw0y1-site/unibest-discussion-group/qq.jpg)
+
+<!-- ![alt text](https://oss.laf.run/ukw0y1-site/unibest-discussion-group/qq.jpg) -->
+<FreshImage src="https://oss.laf.run/ukw0y1-site/unibest-discussion-group/qq.jpg" alt="QQ群二维码" />
 
 ## 微信群
 
