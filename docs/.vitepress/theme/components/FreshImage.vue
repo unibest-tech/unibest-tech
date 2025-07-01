@@ -1,9 +1,9 @@
 <template>
-  <img :src="freshUrl" :alt="alt" />
+  <img :src="freshUrl" :alt="alt" width="300" />
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed } from 'vue';
 const props = defineProps({
   src: {
     type: String,
@@ -13,9 +13,9 @@ const props = defineProps({
     type: String,
     default: '',
   },
-})
+});
 
 const freshUrl = computed(() => {
-  return `${props.src}?t=${Date.now()}`
-})
+  return `${props.src}?t=${Date.now()}`;
+});
 </script>
