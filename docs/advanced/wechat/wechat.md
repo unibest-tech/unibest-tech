@@ -17,6 +17,8 @@
 
 如果确实有需要的，进群后自觉发 `专属红包 20元` 给群主即可。
 
+<FreshImage src="https://oss.laf.run/ukw0y1-site/unibest-discussion-group/wechat-vip.jpg" alt="微信群VIP" />
+
 ## 联系我
 
 如果你有商业上的合作需求，或者想定制化 unibest，欢迎联系我，备注：`商业合作`。
