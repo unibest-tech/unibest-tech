@@ -15,7 +15,7 @@ tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TE
 
 ---
 
-- 0 `无 tabbar`，只有一个页面入口，底部无 `tabbar` 显示；常用语临时活动页。
+- 0 `无 tabbar`，只有一个页面入口，底部无 `tabbar` 显示；常用于临时活动页。
 - 1 `原生 tabbar`，使用 `switchTab` 切换 tabbar，`tabbar` 页面有缓存。
   - 优势：原生自带的 tabbar，最先渲染，有缓存。
   - 劣势：只能使用 2 组图片来切换选中和非选中状态，修改颜色只能重新换图片（或者用 iconfont）。
