@@ -19,6 +19,7 @@
 </template>
 ```
 
+<!--
 ## uni 插件总览
 
 哈哈，这个当然是 `uni插件` 的功劳了，具体点是 `@uni-helper/vite-plugin-uni-pages` 插件的功劳，该插件由 `uni-helper` 官方团队开发。
@@ -53,7 +54,7 @@
 - `vite-plugin-uni-manifest`
 
   - 介绍：使用 `TypeScript` 来编写 `uni-app` 的 `manifest.json`
-  - 访问地址：[@uni-helper/vite-plugin-uni-manifest](https://github.com/uni-helper/vite-plugin-uni-manifest)
+  - 访问地址：[@uni-helper/vite-plugin-uni-manifest](https://github.com/uni-helper/vite-plugin-uni-manifest) -->
 
 ## vite-plugin-uni-pages
 
@@ -63,11 +64,12 @@
 
 `route` 代码块则可以配置页面相关信息，这些信息会自动同步到 `page.json`，无需切换到 `page.json` 进行配置。
 
+### 温馨提示
+
 > `pages.json` 文件是自动生成的，请不要手动修改，全局的东西请在 `pages.config.ts` 里面配置，页面上的东西请在 `vue` 文件的 `route` 代码块配置，如下图。
 
 ```vue [src/pages/index.vue]
 <!-- 使用 type="home" 属性设置首页，其他页面不需要设置，默认为page -->
-<!-- 推荐使用json5，更强大，且允许注释 -->
 <route lang="json5" type="home">
 {
   style: {
@@ -113,7 +115,7 @@
 UniPages({
   exclude: ['**/components/**/**.*'],
   subPackages: ['src/pages-sub'], // 是个数组，可以配置多个，但不能为 `src/pages` 里面的子目录
-})
+});
 ```
 
 ## vite-plugin-uni-layouts

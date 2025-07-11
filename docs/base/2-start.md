@@ -7,8 +7,6 @@
   - **`VSCode`** - 可选 `WebStrom`
   - **`HBuilderX`** - `APP` 的运行和发布还是离不开它
 
-> 必看章节：[uni 插件篇](/base/3-plugin) 和 [常见问题](/base/14-faq)
-
 ## 创建项目
 
 通过下面的命令可以快速生成项目模板，`pnpm create unibest <项目名称>` ，如果不写 `<项目名称>` 会进入命令行交互模式。
@@ -22,18 +20,17 @@ pnpm create unibest@latest
 
 实际操作截图如下：
 
-`create-unibest` 在 `v1.10.0` 开始会有版本号，如下：
+<!-- `create-unibest` 在 `v1.10.0` 开始会有版本号，如下：
 
 ![alt text](./assets/2-2.png)
 
 `2025-06-21` 发布 `v2.0.0` 精简了很多模板，`base`、`tabbar`、`spa` 合并成了新的 `base` 模板（新的 `base` 模板可以在代码层面得到所有的四种 `tabbar` 形式），同时去掉了 `hbx-base`、`hbx-demo`。
 
-最新的模板支持如下：
+最新的模板支持如下： -->
+
 ![alt text](image-1.png)
 
 新的 `base` 模板如何切换不同的 tabbar, 见 [tabbar 专题](./2-tabbar.md)
-
-> 旧的模板相关内容，见文末，留个纪念。
 
 ## 安装、运行
 
@@ -54,6 +51,10 @@ pnpm dev:app # 运行App
 git add .
 git commit -m "feat: init project"
 ```
+
+## 必看章节
+
+[uni 插件篇](/base/3-plugin) 和 [常见问题](/base/14-faq)
 
 ## `v3` 代码块
 
