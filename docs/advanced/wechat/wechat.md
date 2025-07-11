@@ -2,15 +2,27 @@
 
 千万记得 `先看一遍文档`，可以解决大部分基础疑问。
 
-## QQ 交流群
+## 免费 QQ 群
 
 ①②③④ 群已满，下面是 ⑤ 群。
 
 <!-- ![alt text](https://oss.laf.run/ukw0y1-site/unibest-discussion-group/qq.jpg) -->
 <FreshImage src="https://oss.laf.run/ukw0y1-site/unibest-discussion-group/qq.jpg" alt="QQ群二维码" />
 
-## 微信群
+> QQ 群永久有效，微信群 7 天就过期。QQ 群无需每 7 天替换一次。
 
-微信群 `7天` 就过期，需要额外精力替换链接。目前已经有 `9个` 微信群，维护需要精力。从 `2025-06-29` 开始，不再提供免费微信交流群。
+## 付费微信群
 
-如果确实有需要的，可以付费 `20元` 入群，[联系我](/advanced/contact/contact)。
+目前已经有 `9个` 微信群，维护需要精力（回答各种问题）。从 `2025-07-01` 开始，不再提供免费微信交流群。
+
+如果确实有需要的，进群后自觉发 `专属红包 20元` 给群主即可。
+
+## 联系我
+
+如果你有商业上的合作需求，或者想定制化 unibest，欢迎联系我，备注：`商业合作`。
+
+如果你有外包需求，也可以联系我，备注：`外包`。
+
+<p style="text-align: center;">
+<img width=200px src="https://oss.laf.run/ukw0y1-site/wx-me.jpg">
+</p>

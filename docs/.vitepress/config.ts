@@ -163,10 +163,7 @@ export default defineConfig({
           // { text: '最佳实践', link: '20-best' },
         ],
       },
-      {
-        text: '⭐ 联系我',
-        link: '/advanced/contact/contact',
-      },
+
       {
         text: '需求池',
         link: '/advanced/roadmap/roadmap',
@@ -189,6 +186,10 @@ export default defineConfig({
         items: [
           { text: '🥤 打赏', link: 'rewards/rewards' },
           { text: '交流群', link: 'wechat/wechat' },
+          // {
+          //   text: '联系我',
+          //   link: 'contact/contact',
+          // },
           { text: '赞助榜', link: 'sponsor/sponsor' },
         ],
       },
