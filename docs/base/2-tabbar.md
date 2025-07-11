@@ -37,7 +37,7 @@ tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TE
 首先选择使用哪个 `策略`，然后配置对应的 `tabbarList`。关键代码如下：
 
 ```ts
-// 文件路径为 `./src/layouts/fg-tabbar/tabbarList.js`
+// 文件路径为 `./src/layouts/fg-tabbar/tabbarList.ts`
 /**
  * tabbar 选择的策略，更详细的介绍见 tabbar.md 文件
  * 0: 'NO_TABBAR' `无 tabbar`
