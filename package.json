@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "packageManager": "pnpm@10.11.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev docs --host",
@@ -13,6 +14,7 @@
   "license": "ISC",
   "description": "unibest - 最好的 uniapp 开发框架",
   "devDependencies": {
+    "vite-plugin-compression": "^0.5.1",
     "vitepress": "^1.6.3",
     "vitepress-plugin-llms": "^1.5.1"
   },

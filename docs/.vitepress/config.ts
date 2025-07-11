@@ -1,5 +1,6 @@
 import dayjs from 'dayjs';
 import { defineConfig } from 'vitepress';
+import viteCompression from 'vite-plugin-compression';
 import llmsPlugin from 'vitepress-plugin-llms';
 import packageJson from '../../package.json';
 
@@ -15,6 +16,22 @@ export default defineConfig({
   description: '最好用的 uniapp 开发模板',
   lastUpdated: true,
   cleanUrls: true,
+  vite: {
+    // 其他配置...
+    plugins: [
+      llmsPlugin({
+        ignoreFiles: [],
+        domain: 'https://unibest.tech',
+      }),
+      viteCompression({
+        verbose: true,
+        disable: false,
+        threshold: 10240,
+        algorithm: 'gzip',
+        ext: '.gz',
+      }),
+    ],
+  },
   head: [
     ['link', { rel: 'icon', href: `${base}favicon.ico` }],
     // 增加构建信息
@@ -272,9 +289,5 @@ export default defineConfig({
         },
       },
     },
-  },
-  vite: {
-    // 其他配置...
-    plugins: [llmsPlugin() as any],
   },
 });
