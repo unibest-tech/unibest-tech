@@ -8,6 +8,13 @@ tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TE
 
 `tabbar` 分为 `4 种` 情况：0,1,2,3。
 
+- 0: 'NO_TABBAR' `无 tabbar`
+- 1: 'NATIVE_TABBAR' `完全原生 tabbar`
+- 2: 'CUSTOM_TABBAR_WITH_CACHE' `有缓存自定义 tabbar`
+- 3: 'CUSTOM_TABBAR_WITHOUT_CACHE' `无缓存自定义 tabbar`
+
+---
+
 - 0 `无 tabbar`，只有一个页面入口，底部无 `tabbar` 显示；常用语临时活动页。
 - 1 `原生 tabbar`，使用 `switchTab` 切换 tabbar，`tabbar` 页面有缓存。
   - 优势：原生自带的 tabbar，最先渲染，有缓存。
