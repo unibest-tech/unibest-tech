@@ -7,6 +7,8 @@
   - **`VSCode`** - 可选 `WebStrom`
   - **`HBuilderX`** - `APP` 的运行和发布还是离不开它
 
+> 必看章节：[uni 插件篇](/base/3-plugin) 和 [常见问题](/base/14-faq)
+
 ## 创建项目
 
 通过下面的命令可以快速生成项目模板，`pnpm create unibest <项目名称>` ，如果不写 `<项目名称>` 会进入命令行交互模式。

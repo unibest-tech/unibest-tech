@@ -2,13 +2,7 @@
 
 本篇介绍一些常见的问题，会持续更新。
 
-## 1. 如何设置/修改首页？
-
-`vue` 文件的 `route-block` 块里面设置 `type="home"` 即可，请确保项目里面 `只有一个页面` 是这个配置。
-
-> 注意：如果有多个，会按照字母顺序排列，第一个是首页。（可能不是您的想要的效果。）
-
-## 2. 修改 `pages.json`、`manifest.json` 被覆盖问题
+## 1. 修改 `pages.json`、`manifest.json` 被覆盖问题
 
 - `pages.json`
 
@@ -21,6 +15,12 @@
 与上面类似。本项目引入了 `@uni-helper/vite-plugin-uni-manifest`，`manifest.json` 文件将会自动生成，手动修改 `manifest.json` 将会被覆盖。
 
 如需修改，请在 `manifest.config.ts` 里面修改。
+
+## 2. 如何设置/修改首页？
+
+`vue` 文件的 `route-block` 块里面设置 `type="home"` 即可，请确保项目里面 `只有一个页面` 是这个配置。
+
+> 注意：如果有多个，会按照字母顺序排列，第一个是首页。（可能不是您的想要的效果。）
 
 ## 3. 怎么分包？
 
