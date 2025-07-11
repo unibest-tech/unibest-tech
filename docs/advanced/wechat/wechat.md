@@ -17,7 +17,7 @@
 
 目前已经有 `9个` 微信群，维护需要精力（回答各种问题）。从 `2025-07-01` 开始，不再提供免费微信交流群。
 
-如果确实有需要的，进群后自觉发 `专属红包 20元` 给群主即可。
+如果确实有需要的，进群后发 `专属红包 20元` 给群主即可。
 
 <FreshImage src="https://oss.laf.run/ukw0y1-site/unibest-discussion-group/wechat-vip.jpg" alt="微信群VIP" />
 
