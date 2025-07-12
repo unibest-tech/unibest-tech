@@ -16,6 +16,8 @@
 
 如需修改，请在 `manifest.config.ts` 里面修改。
 
+详情请见[uni 插件篇](/base/3-plugin)
+
 ## 2. 如何设置/修改首页？
 
 `vue` 文件的 `route-block` 块里面设置 `type="home"` 即可，请确保项目里面 `只有一个页面` 是这个配置。
