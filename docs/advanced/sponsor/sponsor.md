@@ -12,12 +12,14 @@
 
 - 麦可
 - 程序员云创 [https://www.codecommitter.com/](https://www.codecommitter.com/)
-- 海鲜™ 深圳金济福科技有限公司[https://www.jinjifu.com/](https://www.jinjifu.com/)
+- 海鲜 ™ 深圳金济福科技有限公司[https://www.jinjifu.com/](https://www.jinjifu.com/)
 
 ## 50 元
 
 - \*皮
 - 暗月隐落 [飞鸟快验 - 一个通用网络验证后台](https://www.fnkuaiyan.cn)
+- TT2511590093 [github:ljt990218](https://github.com/ljt990218)
+  > 很强的一位程序员，github 分数 `B-` （很赞^\_^）
 
 ## 20 元
 
