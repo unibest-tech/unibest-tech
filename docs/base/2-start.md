@@ -4,7 +4,7 @@
 
   - **Node.js** - `>=v20` (我的是 `v22.13.0`)
   - **pnpm** - `>=9+` (我的是 `10.11.0`)
-  - **`VSCode`** - 可选 `WebStrom`
+  - **`VSCode`** - 可选 `WebStorm`
   - **`HBuilderX`** - `APP` 的运行和发布还是离不开它
 
 ## 创建项目
