@@ -26,9 +26,9 @@ tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TE
   - 优势：可以随意配置自己想要的 svg icon，切换字体颜色方便。可以实现各种花里胡哨的动效等。
   - 劣势：首次点击 `tabbar` 会闪烁，无缓存。
 
-上述文档在代码中也有一份，方便开发者查阅。`./src/layouts/fg-tabbar/tabbar.md`
+上述文档在代码中也有一份，方便开发者查阅。`src/layouts/fg-tabbar/tabbar.md`
 
-> 注意：花里胡哨的效果需要自己实现，本模版不提供。
+> 注意：`v3.7.0(2025-08-05)` 开始，`tabbar` 相关的代码统一放到 `src/tabbar` 文件夹。
 
 ## 如何配置
 
@@ -37,7 +37,8 @@ tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TE
 首先选择使用哪个 `策略`，然后配置对应的 `tabbarList`。关键代码如下：
 
 ```ts
-// 文件路径为 `./src/layouts/fg-tabbar/tabbarList.ts`
+// 文件路径为 `src/layouts/fg-tabbar/tabbarList.ts`
+// `v3.7.0(2025-08-05)` 开始， `src/tabbar/config.ts`。
 /**
  * tabbar 选择的策略，更详细的介绍见 tabbar.md 文件
  * 0: 'NO_TABBAR' `无 tabbar`
@@ -113,7 +114,7 @@ export const CUSTOM_TABBAR_NO_CACHE = false;
 /**
  * 根据您选择的UI框架，配置相应的字段信息
  * pagePath 需要与 pages.config.ts 里面的 tabBar.list 里面的 pagePath 保持一致，这样才有缓存效果。
- * iconType: uiLib, unocss, local, iconfont。
+ * iconType: uiLib, unocss, local, iconfont。 (`v3.7.0(2025-08-05)` 开始， 增加了 `uniUi`， 可以直接用 uni-cions)
  */
 export const tabbarList = [
   {
@@ -133,6 +134,4 @@ export const tabbarList = [
 ];
 ```
 
-上面的代码已经传到 `new-tabbar` 分支了，欢迎大家积极讨论：
-
-讨论地址：[【tabbar】模式探讨 issue #158](https://github.com/unibest-tech/unibest/issues/158)
+上面的代码已经传到各个主分支了。
