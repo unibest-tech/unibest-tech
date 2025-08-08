@@ -2,6 +2,25 @@
 
 > 完整的更新日志，查看 [github releases 日志](https://github.com/unibest-tech/unibest/releases)
 
+## v3.8.0(2025-08-08)
+
+## 新功能
+
+框架内支持 `UI库` 无关的自定义 `tabbar`，以便部分无 `tabbar` 组件的 `UI库` 的接入。
+
+- 支持多种类型的图标( `uniUi Icons, uiLib Icons, unocss Icons, iconfont, image` 等)
+- 支持 `tabbar` 中间鼓包的 `tabbatItem`
+
+支持直接通过 URL 进入应用的路由拦截。
+
+## v3.4.0(2025-07-19)
+
+## 多语言模版
+
+- `tabbar` 和 `navbar` 无需用户自己做多语言的切换操作，框架已经处理好了。
+
+详情请看 [多语言篇-tabbar 标题](/base/10-i18n#tabbar-标题)
+
 ## v3.0.0(2025-06-21-周六)
 
 ### 重大更新
