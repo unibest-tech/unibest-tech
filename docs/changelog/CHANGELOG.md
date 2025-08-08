@@ -4,14 +4,16 @@
 
 ## v3.8.0(2025-08-08)
 
-## 新功能
+### tabbar 改版
 
 框架内支持 `UI库` 无关的自定义 `tabbar`，以便部分无 `tabbar` 组件的 `UI库` 的接入。
 
 - 支持多种类型的图标( `uniUi Icons, uiLib Icons, unocss Icons, iconfont, image` 等)
-- 支持 `tabbar` 中间鼓包的 `tabbatItem`
+- 支持 `tabbar` 中间鼓包 (bulge) 的 `tabbatItem`
 
-支持直接通过 URL 进入应用的路由拦截。
+### 路由拦截增强
+
+支持直接进入应用路由的的路由拦截，如 `h5` 直接输入路由、`微信小程序` 分享后进入等。
 
 ## v3.4.0(2025-07-19)
 
