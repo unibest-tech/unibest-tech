@@ -6,7 +6,7 @@ import packageJson from '../../package.json';
 
 const buildTime = dayjs().format('YYYY-MM-DD HH:mm:ss');
 
-const base = '/'; // default is /
+const base = '/unibest-docs'; // default is /
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

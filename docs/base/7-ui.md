@@ -56,6 +56,57 @@ easycom: {
 ]
 ```
 
+## 安装 `uview-pro` 库
+
+- 1. 安装 `uview-pro` 库：
+
+```sh
+pnpm add uview-pro
+```
+
+- 2. 引入 uView Pro 主库
+
+在项目`src` 目录中的 `main.ts` 中，引入并使用  `uView Pro` 的工具库。
+
+```diff
+import { createSSRApp } from "vue";
++ import uViewPro from "uview-pro";
+
+export function createApp() {
+  const app = createSSRApp(App);
++  app.use(uViewPro);
+  // 其他配置
+  return {
+    app,
+  };
+}
+```
+
+- 3. `pages.config.ts` 文件 `easycom.custom` 添加相关配置：
+
+```diff
+easycom: {
+  autoscan: true,
+  custom: {
++   '^u-(.*)': 'uview-pro/components/u-$1/u-$1.vue',
+  },
+},
+```
+
+- 4. `uni.scss` 中末尾引入 `uView Pro` 的颜色变量
+
+```scss
+@import 'uview-pro/theme.scss';
+```
+
+- 5. `App.vue` 中首行的位置引入 `uView Pro` 的基础样式
+
+```scss
+<style lang="scss">
+@import 'uview-pro/index.scss';
+</style>
+```
+
 ## 安装 `uni-ui` 库
 
 - 1. 安装 `uni-ui` 库：
