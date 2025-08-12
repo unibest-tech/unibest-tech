@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # token: ${{ secrets.GH_TOKEN_AUTO_MERGE }}
+          token: ${{ secrets.GH_TOKEN_AUTO_MERGE }}
 
       - name: Merge main into aliyun
         run: |
