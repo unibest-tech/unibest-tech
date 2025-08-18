@@ -9,6 +9,7 @@ import jiansuoyou from './监所邮.png';
 import yinxiaole from './消印乐.png';
 import xiangyouxiaozhan from './随享小栈.png';
 import tuziyunyin from './兔子云印.png';
+import weimofang from './微魔方.jpg';
 
 export const cases = [
     {
@@ -65,5 +66,11 @@ export const cases = [
         name: '兔子云印',
         desc: '打印学习资料、教材、办公文档等在线云印服务',
         image: tuziyunyin,
+    },
+
+    {
+        name: '微魔方',
+        desc: 'AI智能拍题批改，精准答疑辅导',
+        image: weimofang,
     },
 ];
