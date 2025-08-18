@@ -42,8 +42,8 @@
 
   > 精致的下拉刷新和上拉加载 js 框架，一套代码多端运行，支持 `uni-app`。
 
-- [QRCode](https://github.com/Sansnn/uQRCode?tab=readme-ov-file)
-  > 全端适配的二维码组件
+- [QRCode](https://uqrcode.cn/doc/document/native.html)
+  > 全端适配的二维码组件，
 
 ## uni-app
 
