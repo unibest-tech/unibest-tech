@@ -10,6 +10,7 @@ import yinxiaole from './消印乐.png';
 import xiangyouxiaozhan from './随享小栈.png';
 import tuziyunyin from './兔子云印.png';
 import weimofang from './微魔方.jpg';
+import AIOps from './AI 运维智能体.jpg';
 
 export const cases = [
     {
@@ -41,6 +42,11 @@ export const cases = [
         name: '云打牌记账本',
         desc: '',
         image: yundapai,
+    },
+    {
+        name: 'AI 运维智能体',
+        desc: '告别低效运维，让Ai为您的团队赋能',
+        image: AIOps,
     },
     {
         name: '监所通',
