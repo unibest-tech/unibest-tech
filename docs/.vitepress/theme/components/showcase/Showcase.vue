@@ -1,10 +1,13 @@
 <script setup>
 import { cases } from './Showcase';
+const gotoShowCase = () => {
+  window.open('/advanced/showcase/showcase', '_blank');
+};
 </script>
 
 <template>
   <div class="wrapper">
-    <h3 class="title-cls">部分优秀案例</h3>
+    <h3 class="title-cls" @click="gotoShowCase">部分优秀案例</h3>
     <div class="cases-container">
       <el-card v-for="(item, index) in cases" :key="index" shadow="hover">
         <template #header>
@@ -31,6 +34,11 @@ import { cases } from './Showcase';
   margin: 20px auto;
   max-width: 1152px;
   color: var(--vp-button-brand-bg);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
 }
 .cases-container {
   display: grid;

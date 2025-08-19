@@ -11,6 +11,7 @@ import xiangyouxiaozhan from './随享小栈.png';
 import tuziyunyin from './兔子云印.png';
 import weimofang from './微魔方.jpg';
 import AIOps from './AI 运维智能体.jpg';
+import okkqushuiyin from './okk去水印.jpg';
 
 export const cases = [
     {
@@ -42,6 +43,11 @@ export const cases = [
         name: '云打牌记账本',
         desc: '',
         image: yundapai,
+    },
+    {
+        name: 'okk去水印',
+        desc: '提供各大平台短视频去水印等实用功能',
+        image: okkqushuiyin,
     },
     {
         name: 'AI 运维智能体',
