@@ -2,6 +2,14 @@
 
 > 完整的更新日志，查看 [github releases 日志](https://github.com/unibest-tech/unibest/releases)
 
+## v3.11.0(2025-08-24)
+
+### 新增 `root 插件`
+
+新增 `root 插件`，支持在 `App.ku.vue` 配置全局性的东西。
+
+增加从 `App.ku.vue` 暴露状态的方法，以便在 `vue` 中使用。
+
 ## v3.10.0(2025-08-22)
 
 ### 新增 `登录策略`
