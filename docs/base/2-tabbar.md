@@ -1,6 +1,10 @@
 # tabbar 专题
 
-tabbar 调查问卷地址：[问卷地址](https://docs.qq.com/form/page/DVVF0TEdmY2ZHV3RE)
+<https://www.bilibili.com/video/BV1omeJzDE8Z?vd_source=59df4f5d6bca7e40fba5b30d7c8b1ce2&spm_id_from=333.788.player.switch>
+
+哔哩哔哩录制了视频，感兴趣的可以去看看，如果对您有帮助的话，记得一键三连哈。
+
+![alt text](2-tabbar-bilibili.png)
 
 ## v3.0.0
 
