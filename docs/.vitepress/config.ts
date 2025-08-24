@@ -197,6 +197,7 @@ export default defineConfig({
         text: '升级指南',
         link: '/changelog/upgrade',
       },
+
       {
         text: '社交',
         base: '/advanced/',
@@ -208,6 +209,14 @@ export default defineConfig({
           //   link: 'contact/contact',
           // },
           { text: '赞助榜', link: 'sponsor/sponsor' },
+        ],
+      },
+      {
+        text: '博客',
+        base: '/log/',
+        items: [
+          { text: 'unibest 3.11 发布了', link: '2' },
+          { text: 'unibest 3.0 发布了', link: '1' },
         ],
       },
       {
