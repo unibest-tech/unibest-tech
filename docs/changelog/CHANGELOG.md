@@ -2,6 +2,16 @@
 
 > 完整的更新日志，查看 [github releases 日志](https://github.com/unibest-tech/unibest/releases)
 
+## v3.10.0(2025-08-22)
+
+### 新增 `登录策略`
+
+- 新增 `登录策略` 配置项，用于配置登录时的策略。
+  - `DEFAULT_NO_NEED_LOGIN：0`：黑名单策略，默认可以进入 APP
+  - `DEFAULT_NEED_LOGIN: 1`：白名单策略，默认不可以进入 APP，需要强制登录
+- 外加配套的 `EXCLUDE_PAGE_LIST`: 排除在外的列表，白名单策略指白名单列表，黑名单策略指黑名单列表
+- 并编写了配套的 `pages/login/login` 路由和 `pages/me/me` 路由，已经根据登录策略进行了跳转。
+
 ## v3.8.0(2025-08-08)
 
 ### tabbar 改版
