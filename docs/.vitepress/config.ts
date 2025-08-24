@@ -213,7 +213,7 @@ export default defineConfig({
       },
       {
         text: '博客',
-        base: '/log/',
+        base: '/blog/',
         items: [
           { text: 'unibest 3.11 发布了', link: '2' },
           { text: 'unibest 3.0 发布了', link: '1' },
