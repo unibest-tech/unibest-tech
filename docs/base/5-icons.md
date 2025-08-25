@@ -58,14 +58,14 @@
 > 另外，经过检测，都支持动态 `iconName`和动态 `color` ! 即下面这样的写法是生效的：
 
 ```ts
-const iconName = ref<string>('contact')
-const colorName = ref<string>('red')
+const iconName = ref<string>('contact');
+const colorName = ref<string>('red');
 onLoad(() => {
   setTimeout(() => {
-    iconName.value = 'chat'
-    colorName.value = 'green'
-  }, 1000)
-})
+    iconName.value = 'chat';
+    colorName.value = 'green';
+  }, 1000);
+});
 ```
 
 ```html
@@ -124,12 +124,12 @@ onLoad(() => {
 昨天有网友反馈，`UnoCSS Icons` 无法使用动态类名，我来试试：（我先说结论：是支持的！）
 
 ```ts
-const iconName = ref<string>('i-carbon-car')
+const iconName = ref<string>('i-carbon-car');
 onLoad(() => {
   setTimeout(() => {
-    iconName.value = 'i-carbon-user-avatar'
-  }, 1000)
-})
+    iconName.value = 'i-carbon-user-avatar';
+  }, 1000);
+});
 ```
 
 ```html
@@ -140,11 +140,17 @@ onLoad(() => {
 
 ### 5.再说动态图标名
 
-有的时候类名是动态的，比如是 a+b 拼凑的，比如是后端返回的，比如是跨文件的，这时候页面是无法显示出该图标的。因为 `UnoCSS` 还不知道具体的类名是啥，无法得到对应的图标。解决方案有2种：
+有的时候类名是动态的，比如是 a+b 拼凑的，比如是后端返回的，比如是跨文件的，这时候页面是无法显示出该图标的。因为 `UnoCSS` 还不知道具体的类名是啥，无法得到对应的图标。解决方案有 2 种：
 
 - 1. 在代码里写出完整的图标类名，并注释掉。(SFC 的任何位置都可以)
 
 - 2. 在 `unocss.config.ts` 的 `safelist` 配置该完整类名。[unocss safelist](https://unocss.dev/config/#safelist)
+
+### 6.class 编写方式提示
+
+尽量用中划线而不是冒号连接类型，即使用 `i-carbon-user-avatar` 这种方式，而不是 `i-carbon:user-avatar`，因为后者在 `微信小程序` 中会被分割成 2 个类名，导致图标无法显示。（群友血的教训 on 2025-08-25）
+
+![alt text](5-1.png)
 
 ## iconfont 图标库
 
